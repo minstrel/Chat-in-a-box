@@ -1,6 +1,6 @@
 # Chat-in-a-box
 
-A simple single page web based group chat with picture posting, ready to deploy to a Docker container.
+A simple, single page, web based group chat, with picture posting, ready to deploy to a Docker container.
 
 I built this as an exercise to build a rails app from development through creating a production ready app and to learn a little about websockets.
 
