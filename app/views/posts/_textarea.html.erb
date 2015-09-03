@@ -1,0 +1,11 @@
+<div class="container" id="chat_area">
+  <% @posts.each do |post| %>
+    <div class="row">
+      <div class="col-xs-12">
+        <em style="color:green"><%= post.name %> said </em><%= post.text %><br>
+        <%= image_tag(post.picture_url) if post.picture.present? %> 
+      </div>
+    </div>
+  <% end %>
+</div>
+
