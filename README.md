@@ -31,3 +31,5 @@ If you want to scrub the database/image uploads each day, you can either start a
 
 docker exec containername /bin/bash -c '/usr/src/app/daily_clean.sh'
 
+## Screenshot(s)
+![Screenshot](chat-screenshot.PNG)
