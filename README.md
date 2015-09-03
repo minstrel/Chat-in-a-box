@@ -33,3 +33,5 @@ docker exec containername /bin/bash -c '/usr/src/app/daily_clean.sh'
 
 ## Screenshot(s)
 ![Screenshot](chat-screenshot.PNG)
+
+I'll write in something soon so "said" disappears if you don't type a name in.
