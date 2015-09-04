@@ -18,10 +18,13 @@ No reason you have to use Docker though, I suppose you could deploy it wherever 
 1.  Clone this repo.
 
 2.  Build the image with:
+
         'docker build -t myrepo/myappname:version .'
 
 3.  Run it with:
+
         'docker run -d --name most_awesome_chat_ever -p 3000:3000 myrepo/myappname:version'
+
     If you modify the outward facing port, also update it in post.js (step 2).
 
 4.  Navigate to myserver:3000/posts and waste time with your coworkers.
