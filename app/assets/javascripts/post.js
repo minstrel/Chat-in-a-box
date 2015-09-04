@@ -1,5 +1,5 @@
 // Connect to the websocket server
-var post_socket = new WebSocketRails('localhost:3000/websocket');
+var post_socket = new WebSocketRails(window.location.host + '/websocket');
 // console.log("up and running!!!");
 
 // Send a message to the socket when the form is submitted

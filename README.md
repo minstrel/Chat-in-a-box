@@ -17,19 +17,19 @@ No reason you have to use Docker though, I suppose you could deploy it wherever 
 
 1. Clone this repo.
 
-2. Edit app/assets/javascripts/post.js and change 'localhost:3000' to whatever the hostname or IP of your production server will be.
+2. Build the image with 'docker build -t myrepo/myappname:version .'
 
-3. Build the image with 'docker build -t myrepo/myappname:version .'
+3. Run it with 'docker run -d --name most_awesome_chat_ever -p 3000:3000 myrepo/myappname:version' If you modify the outward facing port, also update it in post.js (step 2).
 
-4. Run it with 'docker run -d --name most_awesome_chat_ever -p 3000:3000 myrepo/myappname:version' If you modify the outward facing port, also update it in post.js (step 2).
-
-5. Waste time with your coworkers.
+4. Navigate to myserver:3000/posts and Waste time with your coworkers.
 
 ## Random notes
 
-If you want to scrub the database/image uploads each day, you can either start a new container in the morning, or run the daily_clean.sh script via cron / systemd / robot chipmunks on your host:
+*   I'm not sure if this is even a thing, but if you're running the application under a subfolder, IE myserver:3000/somefolder/posts, you'll want to adjust the value of var post_socket in /app/assets/javascripts/post.js to reflect this, as right now it points to hostname + '/websocket'.
 
-docker exec containername /bin/bash -c '/usr/src/app/daily_clean.sh'
+*   If you want to scrub the database/image uploads each day, you can either start a new container in the morning, or run the daily_clean.sh script via cron / systemd / robot chipmunks on your host:
+
+        docker exec containername /bin/bash -c '/usr/src/app/daily_clean.sh'
 
 ## Screenshot(s)
 ![Screenshot](chat-screenshot.PNG)
