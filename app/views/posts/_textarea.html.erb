@@ -3,8 +3,7 @@
     <div class="row">
       <div class="col-xs-12">
         <em>
-          <%= post.name if !post.name.blank? %>
-          <%= "Someone" if post.name.blank? %> said 
+          <%= post.name + " said" if !post.name.blank? %>
         </em><span class="text"><%= post.text %></span><br>
         <%= image_tag(post.picture_url) if post.picture.present? %> 
       </div>

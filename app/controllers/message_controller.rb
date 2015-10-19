@@ -8,8 +8,6 @@ class MessageController < WebsocketRails::BaseController
     # Sanitize before returning to connected clients
     # I don't know if this adds much security, but it prevents the users from i
     # nserting an accidental < and posting a blank message
-    message[:from] = CGI::escapeHTML(message[:from])
-    message[:text] = CGI::escapeHTML(message[:text])
     broadcast_message :out_message, message
   end
 end

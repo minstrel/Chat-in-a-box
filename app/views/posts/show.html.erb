@@ -1,6 +1,8 @@
   <div class="row" id="postrow">
     <div class="col-xs-12">
-      <em style="color:green"><%= @post.name %> said </em><span class="text"><%= @post.text %></span><br>
+      <em>
+        <%= @post.name + " said" if !@post.name.blank? %>
+      </em><span class="text"><%= @post.text %></span><br>
       <%= image_tag(@post.picture_url) if @post.picture.present? %> 
     </div>
   </div>
