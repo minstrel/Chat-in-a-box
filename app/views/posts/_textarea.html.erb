@@ -2,7 +2,10 @@
   <% @posts.each do |post| %>
     <div class="row">
       <div class="col-xs-12">
-        <em style="color:green"><%= post.name %> said </em><%= post.text %><br>
+        <em>
+          <%= post.name if !post.name.blank? %>
+          <%= "Someone" if post.name.blank? %> said 
+        </em><span class="text"><%= post.text %></span><br>
         <%= image_tag(post.picture_url) if post.picture.present? %> 
       </div>
     </div>

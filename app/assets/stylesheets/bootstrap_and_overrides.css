@@ -5,3 +5,111 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+body {
+  background: black;
+}
+
+.text {
+  color: #F15802;
+}
+
+em {
+  color: #1BA52C !important;
+}
+
+.input-group-addon {
+  background-color: black;
+  border-color: black;
+  color: #F15802;
+}
+
+.page_decoration {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.form-control {
+  background-color:#595450;
+  color: #FFFFFF;
+  border-color: #000000;
+}
+
+.form-control:focus {
+  border-color:#F15802;
+}
+
+.btn-warning {
+  color: #000000;
+  background-color: #f15802;
+  border-color: #d84f02;
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #000000;
+  background-color: #be4602;
+  border-color: #592101;
+}
+
+.btn-warning:hover {
+  color: #000000;
+  background-color: #be4602;
+  border-color: #9b3901;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  color: #000000;
+  background-color: #be4602;
+  border-color: #9b3901;
+}
+
+.btn-warning:active:hover,
+.btn-warning.active:hover,
+.open > .dropdown-toggle.btn-warning:hover,
+.btn-warning:active:focus,
+.btn-warning.active:focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.btn-warning:active.focus,
+.btn-warning.active.focus,
+.open > .dropdown-toggle.btn-warning.focus {
+  color: #000000;
+  background-color: #9b3901;
+  border-color: #592101;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #f15802;
+  border-color: #d84f02;
+}
+
+.btn-warning .badge {
+  color: #f15802;
+  background-color: #000000;
+}

@@ -1,13 +1,13 @@
 <%= form_for :post, remote: true, url: posts_path, :html => { :id => 'post_form', :multipart => true } do |f| %>
   <div class="container">
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         <div class="input-group">
           <span class="input-group-addon" id="name_addon">Name</span>
-          <%= f.text_field :name, :tabindex => 1 %>
+          <%= f.text_field :name, :tabindex => 1, :class => "form-control" %>
         </div>
       </div>
-      <div class="col-xs-8">
+      <div class="col-xs-9">
         <div class="input-group">
           <span class="input-group-addon" id="picture_addon">Image</span>
           <%= f.file_field :picture, :tabindex => 4 %>
@@ -18,16 +18,16 @@
     <div class="clearfix visible-xs-block"></div>
 
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         <div class="input-group">
           <span class="input-group-addon" id="say_addon">Say</span>
-          <%= f.text_field :text, :tabindex => 2 %>
+          <%= f.text_field :text, :tabindex => 2, :class => "form-control" %>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-4">
-        <%= f.submit "Send!", :tabindex => 3 %>
+      <div class="col-xs-3">
+        <%= f.submit "Send!", :tabindex => 3, :class => "btn btn-warning" %>
       </div>
     </div>
   </div>

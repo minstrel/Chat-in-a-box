@@ -1,6 +1,6 @@
   <div class="row" id="postrow">
     <div class="col-xs-12">
-      <em style="color:green"><%= @post.name %> said </em><%= @post.text %><br>
+      <em style="color:green"><%= @post.name %> said </em><span class="text"><%= @post.text %></span><br>
       <%= image_tag(@post.picture_url) if @post.picture.present? %> 
     </div>
   </div>
