@@ -6,23 +6,29 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
+$background: #f2ac4e;
+$maintext: #a82d1c;
+$emphasis: #593d30;
+$formbackground: #bdb3b3;
+$formtextcolor: #ffffff;
+
 body {
-  background: black;
-  color: #F15802;
+  background: $background;
+  color: $maintext;
 }
 
 .text {
-  color: #F15802;
+  color: $maintext;
 }
 
 em {
-  color: #1BA52C;
+  color: $emphasis;
 }
 
 .input-group-addon {
-  background-color: black;
-  border-color: black;
-  color: #F15802;
+  background-color: $background;
+  border-color: $background;
+  color: $maintext;
 }
 
 .page_decoration {
@@ -32,40 +38,40 @@ em {
 }
 
 .form-control {
-  background-color:#595450;
-  color: #FFFFFF;
-  border-color: #000000;
+  background-color: $formbackground;
+  color: $formtextcolor;
+  border-color: $background;
 }
 
 .form-control:focus {
-  border-color:#F15802;
+  border-color:#b04646;
 }
 
 .btn-warning {
-  color: #000000;
-  background-color: #f15802;
-  border-color: #d84f02;
+  color: #ffffff;
+  background-color: #b04646;
+  border-color: #9e3f3f;
 }
 
 .btn-warning:focus,
 .btn-warning.focus {
-  color: #000000;
-  background-color: #be4602;
-  border-color: #592101;
+  color: #ffffff;
+  background-color: #8c3737;
+  border-color: #431a1a;
 }
 
 .btn-warning:hover {
-  color: #000000;
-  background-color: #be4602;
-  border-color: #9b3901;
+  color: #ffffff;
+  background-color: #8c3737;
+  border-color: #722d2d;
 }
 
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
-  color: #000000;
-  background-color: #be4602;
-  border-color: #9b3901;
+  color: #ffffff;
+  background-color: #8c3737;
+  border-color: #722d2d;
 }
 
 .btn-warning:active:hover,
@@ -77,9 +83,9 @@ em {
 .btn-warning:active.focus,
 .btn-warning.active.focus,
 .open > .dropdown-toggle.btn-warning.focus {
-  color: #000000;
-  background-color: #9b3901;
-  border-color: #592101;
+  color: #ffffff;
+  background-color: #722d2d;
+  border-color: #431a1a;
 }
 
 .btn-warning:active,
@@ -106,11 +112,11 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #f15802;
-  border-color: #d84f02;
+  background-color: #b04646;
+  border-color: #9e3f3f;
 }
 
 .btn-warning .badge {
-  color: #f15802;
-  background-color: #000000;
+  color: #b04646;
+  background-color: #ffffff;
 }
