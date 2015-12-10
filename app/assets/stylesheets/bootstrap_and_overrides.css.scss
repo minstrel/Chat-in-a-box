@@ -6,11 +6,16 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-$background: #f2ac4e;
-$maintext: #a82d1c;
-$emphasis: #593d30;
-$formbackground: #bdb3b3;
-$formtextcolor: #ffffff;
+/* Background color */
+$background: #c21717;
+/* Text after "said" and form labels */
+$maintext: #fff2f0;
+/* "So-and-so said" text */
+$emphasis: #3c8d0d;
+/* Color of input fields */
+$formbackground: #3c8d0d;
+/* Color of text input */
+$formtextcolor: #fff2f0;
 
 body {
   background: $background;
