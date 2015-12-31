@@ -7,15 +7,17 @@
   */
 
 /* Background color */
-$background: #c21717;
+$background: #eeb01f;
 /* Text after "said" and form labels */
-$maintext: #fff2f0;
+$maintext: #d35336;
 /* "So-and-so said" text */
-$emphasis: #3c8d0d;
+$emphasis: #719a1a;
 /* Color of input fields */
-$formbackground: #3c8d0d;
+$formbackground: #b5da5d;
 /* Color of text input */
-$formtextcolor: #fff2f0;
+$formtextcolor: #d35336;
+/* Send button color */
+$sendbutton: #000000;
 
 body {
   background: $background;
@@ -53,9 +55,9 @@ em {
 }
 
 .btn-warning {
-  color: #ffffff;
-  background-color: #b04646;
-  border-color: #9e3f3f;
+  color: $background;
+  background-color: $maintext;
+  border-color: lighten($maintext,10%);
 }
 
 .btn-warning:focus,
